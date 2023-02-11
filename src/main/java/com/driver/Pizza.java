@@ -6,12 +6,12 @@ public class Pizza {
     private Boolean isVeg;
     private String bill;
     private int topping;
-    public boolean isaddChees = false;
-    public boolean isaddtopping = false;
+    boolean isaddChees = false;
+     boolean isaddtopping = false;
 
-    public boolean isbill = false;
+     boolean isbill = false;
 
-    public boolean istake = false;
+    boolean istake = false;
 
 
 
@@ -75,10 +75,10 @@ public class Pizza {
             }
             if(istake)
             {
-                this.bill+="Paperbag Added: 20";
+                this.bill+="Paperbag Added: 20"+"\n";
             }
             isbill = true;
-            return this.bill+="Total Price: "+this.price;
+            return this.bill+="Total Price: "+this.price+"\n";
 
         }
         return "";
